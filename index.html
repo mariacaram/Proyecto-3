@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DENIM</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style3.css" />
+  </head>
+  
+  
+</header>
+  
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="four columns">
+            <h1>
+              DENIM
+              Tienda Online
+            </h1>
+          </div>
+
+          <div class="two columns u-pull-right">
+            <ul>
+              <li class="submenu">
+                <img src="./iconos/cart.png" alt="" />
+                <div id="carrito">
+                  <p class="vacio">carrito vacío</p>
+
+                  <table id = "lista-carrito" class="u-full-width">
+                    <thead>
+                      <tr>
+                        <th>Imagen</th>
+                        <th>Prenda</th>
+                        <th>Precio</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <!-- <tr>
+                        <td>
+                          <img src="./camperas/uno.jfif" width="100" />
+                        </td>
+                        <td>Ambo color blanco</td>
+                        <td>$3.000</td>
+                        <td>
+                          <a href="#" class="borrar-prenda">X</a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <img src="./jeans/p1.jpg" width="100" />
+                        </td>
+                        <td>jean slim fit azul oscuro</td>
+                        <td>$2.500</td>
+                        <td>
+                          <a href="#" class="borrar-prenda">X</a>
+                        </td>
+                      </tr> -->
+                    </tbody>
+                  </table>
+                  <a id= "vaciar-carrito" href="#" class="button u-full-width">vaciar carrito</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="six columns">
+            <div class="contenido-hero">
+              <h2>Prueba una prenda</h2>
+              <p>Todas las prendas a $2.500</p>
+
+              <form>
+                <input
+                  class="u-full-width"
+                  type="text"
+                  placeholder="¿Qué te gustaría comprar?"
+                  id="buscador"
+                />
+                <input type="submit" class="submit-buscador" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="barra">
+      <div class="container">
+        <div class="row">
+          <div class="four columns icono icono1">
+            <p>
+              100 prendas diferentes <br />
+              Explora las nuevas prendas
+            </p>
+          </div>
+
+          <div class="four columns icono icono2">
+            <p>
+              Diseños exclusivos<br />
+              Crea tus propios estilos
+            </p>
+          </div>
+
+          <div class="four columns icono icono3">
+            <p>
+              Promociones<br />
+              Prueba tu prenda favorita
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="lista-platillos" class="container">
+      <h1 class="encabezado">Pedidos en linea</h1>
+      <div class="row">
+        <div class="four columns">
+          <div class="card">
+            <img src="./jeans/p2.jpg" class="imagen-platillo u-full-width" />
+            <div class="info-card">
+              <h4>Jeans</h4>
+              <p>Prendas exclusivas</p>
+              <img src="./iconos/estrellas.png" />
+              <p class="precio">
+                $3.000 <span class="u-pull-right">$2.500</span>
+              </p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="1"
+                >agregar al carrito</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="four columns">
+          <div class="card">
+            <img src="./jeans/p3.jpg" class="imagen-platillo u-full-width" />
+            <div class="info-card">
+              <h4>Jeans</h4>
+              <p>Prendas exclusivas</p>
+              <img src="./iconos/estrellas.png" />
+              <p class="precio">
+                $3.000 <span class="u-pull-right">$2.500</span>
+              </p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="1"
+                >agregar al carrito</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="./jeans/p4.jpg" class="imagen-platillo u-full-width">
+            <div class="info-card">
+              <h4>Jeans</h4>
+              <p>Prendas exclusivas</p>
+              <img src="./iconos/estrellas.png">
+              <p class="precio">
+                $3.000 <span class="u-pull-right">$2.500</span>
+              </p>
+              <a href="#"class="u-full-width button-primary button input agregar-carrito"
+                data-id="1">agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="four columns">
+          <div class="card">
+            <img src="./jeans/p11.jpg" class="imagen-platillo u-full-width" />
+            <div class="info-card">
+              <h4>Jeans</h4>
+              <p>Prendas exclusivas</p>
+              <img src="./iconos/estrellas.png" />
+              <p class="precio">
+                $3.000 <span class="u-pull-right">$2.500</span>
+              </p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="1"
+                >agregar al carrito</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="four columns">
+          <div class="card">
+            <img src="./jeans/p6.jpg" class="imagen-platillo u-full-width" />
+            <div class="info-card">
+              <h4>Jeans</h4>
+              <p>Prendas exclusivas</p>
+              <img src="./iconos/estrellas.png" />
+              <p class="precio">
+                $3.000 <span class="u-pull-right">$2.500</span>
+              </p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="1"
+                >agregar al carrito</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="./jeans/p7.jpg" class="imagen-platillo u-full-width">
+            <div class="info-card">
+              <h4>Jeans</h4>
+              <p>Prendas exclusivas</p>
+              <img src="./iconos/estrellas.png">
+              <p class="precio">
+                $3.000 <span class="u-pull-right">$2.500</span>
+              </p>
+              <a href="#"class="u-full-width button-primary button input agregar-carrito"
+                data-id="1">agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+      
+      
+    </div>
+  
+<footer class="footer">
+<div class="container">
+<div class="row">
+    <div class="four columns">
+<nav class="menu">
+<a class="enlace" href="#">Pedidos a domicilio</a>
+<a class="enlace" href="#">Pedidos en linea</a>
+<a class="enlace" href="#">Pedidos por teléfono</a>
+<a class="enlace" href="#">Menu</a>
+<a class="enlace" href="#">Camperas</a>
+</nav>
+    </div>
+<div class="four columns">
+<nav class="menu">
+    <a class="enlace" href="#">Tienda</a>
+    <a class="enlace" href="#">Ubicación</a>
+    <a class="enlace" href="#">Teléfono</a>
+</nav>
+</div>
+
+
+</div>
+</div>
+</footer>
+
+
+
+</body>
+
+<script src="./prueba.js"></script>
+<script src="./pruebajs.js"></script>
+
+
+</html>
