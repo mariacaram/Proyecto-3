@@ -2,6 +2,12 @@ const carrito = document.getElementById("carrito");
 const platillos = document.getElementById("lista-platillos");
 const listaPlatillos = document.querySelector("#lista-carrito tbody");
 const vaciarCarritoBtn = document.getElementById("vaciar-carrito");
+const contenidoTabla = document.getElementById("lista-cards");
+
+//Declaración variables listar cards
+
+const usuarioJson = localStorage.getItem("cards");
+const cards = JSON.parse(usuarioJson) || [];
 
 cargarEventListeners();
 
@@ -127,3 +133,39 @@ function eliminarPlatilloLocalStorage(platillo) {
 function vaciarLocalStorage() {
     localStorage.clear();
 }
+
+
+
+function mostrarCard() {
+    function armarFilasDeCards(card) {
+        const tr = `
+    <div class="four columns">
+      <div class="card">
+        <img src="${card.imagen}" class="imagen-platillo u-full-width"/>
+        <div class="info-card">
+          <h4>${card.nombre}</h4>
+          <p>Prendas exclusivas</p>
+          <img src="./iconos/estrellas.png"/>
+          <p class="precio">
+            ${card.precio} <span class="u-pull-right">${card.oferta}</span>
+          </p>
+          <a
+            href="#"
+            class="u-full-width button-primary button input agregar-carrito"
+            data-id="2"
+            >agregar al carrito</a>
+            </div>          
+        </div>
+    </div>
+        `;
+        return tr;
+    }
+
+    // El método map genera un array nuevo sin modificar el array original.
+    // Recibe por parámetros la función que debe ejecutarse por cada elemento del array.
+    const contenido = cards.map(armarFilasDeCards);
+
+    contenidoTabla.innerHTML = contenido.join('');
+}
+
+mostrarCard();

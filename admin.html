@@ -32,42 +32,18 @@
                     <input type="text" class="form-control" id="oferta" placeholder="oferta" required>
                     <label for="nombre">Oferta</label>
                 </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="imagen" placeholder="imagen" required>
+                    <label for="nombre">Imagen</label>
+                </div>
                 
-                <button type="button" class="btn btn-warning mb-3" data-bs-toggle="modal" data-bs-target="#modalAdministrarRoles">Administrar roles</button>
                 <button class="btn btn-success">Agregar usuario</button>
             </form>
         </section>
         <!-- Sección Tabla de Usuarios -->
         <section class="my-5">
-            <!-- Formulario de búsqueda de usuarios -->
-            <form onsubmit="buscarUsuario(event)" class="my-3">
-                <label for="busqueda">Buscar por nombre</label>
-                <input id="busqueda" type="text">
-                <button type="submit">Buscar</button>
-                <button type="button" onclick="limpiarBusqueda()">Limpiar</button>
-            </form>
-            <!-- Tabla de Usuarios -->
-            <table class="table table-dark table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Rol</th>
-                        <th scope="col">Acciones</th>
-                    </tr>
-                </thead>
-                <tbody id="contenidoCards">
-                    <!-- <tr>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td><button class="btn btn-warning">Editar</button></td>
-                    </tr>
-                    <tr>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td><button class="btn btn-warning">Editar</button></td>
-                    </tr> -->
-                </tbody>
-            </table>
+
         </section>
     </main>
     <!-- Modal detalle de usuario -->
@@ -154,7 +130,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="./pruebajs.js"></script>
+    <script src="./admin.js"></script>
     
 </body>
 
@@ -166,7 +142,6 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
-    <script src="./prueba.js"></script>
 </body>
 
 </html>
