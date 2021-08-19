@@ -143,7 +143,7 @@ function mostrarCard() {
       <div class="card">
         <img src="${card.imagen}" class="imagen-platillo u-full-width"/>
         <div class="info-card">
-          <h4>${card.nombre}</h4>
+          <h4>${card.prenda}</h4>
           <p>Prendas exclusivas</p>
           <img src="./iconos/estrellas.png"/>
           <p class="precio">
